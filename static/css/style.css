@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-color: #333; /* Dark gray banner */
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+.banner-content {
+    text-align: center; /* Ensures text is centered */
+    max-width: 900px; /* Prevents the text from stretching too wide */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-top: 10px; /* Space directly below the title */
+    line-height: 1.5;
+}
+.download-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px; /* Makes the button rounded */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.blue-btn {
+    background-color: #0044cc; /* Dark Blue */
+}
+
+.red-btn {
+    background-color: #cc0000; /* Red */
+}
+
+.download-btn:hover {
+    opacity: 0.8;
+}
+
+/* Small Rectangles Section */
+.rectangle-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between rectangles */
+    margin-top: 30px;
+}
+
+
+.rectangle {
+    width: 600px;
+    height: 800px;
+    background: url("../images/background_panel.PNG") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 60px;
+    position: relative; /* This ensures subtitle is positioned relative to the rectangle */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensures image stays at the top */
+}
+
+/* Ensure image stays at the top */
+.rectangle img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px; /* Adds spacing at the top */
+    margin-bottom: 10px; /* Space between image and subtitle */
+    display: block;
+}
+
+/* Center the subtitle in the rectangle */
+.rectangle .subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+
+.rectangle .body-text {
+    margin-top: 275px;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+
+
+
+

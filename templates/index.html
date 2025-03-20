@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIST CONTROL FAMILIES</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>NIST CONTROL FAMILIES</h1>
+            <p class="description">
+                The NIST (National Institute of Standards and Technology) Special Publication 800-53 defines security and privacy controls used to protect information systems. These controls are categorized into different families, each addressing a key security area.
+            </p>
+            <div class="download-buttons">
+                <a href="{{ url_for('static', filename='files/NIST.SP.800-53r5.pdf') }}" class="download-btn blue-btn" download>Download PDF</a>
+                <a href="{{ url_for('static', filename='files/sp800-53r5-control-catalog.xlsx') }}" class="download-btn red-btn" download>Download Excel</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small Rectangles Section -->
+    <div class="rectangle-container">
+        <div class="rectangle">
+            <img src="{{ url_for('static', filename='images/access_control.PNG') }}" class="rectangle-icon" alt="Access Control">
+            <p class="subtitle">Access Control</p>
+            <p class="body-text"> Defines who can access systems and what actions they are authorized to perform, ensuring proper restrictions are in place.</p>
+        </div>
+
+        <div class="rectangle">
+            <img src="{{ url_for('static', filename='images/awarness_and_training.PNG') }}" class="rectangle-icon" alt="Awarness and Training">
+            <p class="subtitle">Awarness and Training</p>
+            <p class="body-text"> Focuses on educating personnel to recognize and respond to cybersecurity threats effectively.</p>
+
+        </div>
+
+        <div class="rectangle">
+            <img src="{{ url_for('static', filename='images/audit_and_accountability.PNG') }}" class="rectangle-icon" alt="Audit and Accountability">
+            <p class="subtitle">Audit and Accountability</p>
+            <p class="body-text"> Ensures systems record user activities to enable accountability and detect security violations.</p>
+        </div>
+
+        <div class="rectangle">
+            <img src="{{ url_for('static', filename='images/A.PNG') }}" class="rectangle-icon" alt="Assessment, Authorization, and Monitoring">
+            <p class="subtitle">Assessment, Authorization, and Monitoring</p>
+            <p class="body-text">Covers security assessments, system authorizations, and continuous monitoring of systems. </p>
+        </div>  
+        <div class="rectangle">
+            <img src="{{ url_for('static', filename='images/Configure Mangement.PNG') }}" class="rectangle-icon" alt="Configuration Management">
+            <p class="subtitle">Configuration Management</p>
+            <p class="body-text">Establishes guidelines for controlling system configurations to ensure consistency and security.</p>
+        </div> 
+        <div class="rectangle">
+            <img src="{{ url_for('static', filename='images/Contingency Planning.PNG') }}" class="rectangle-icon" alt="Contingency Planning">
+            <p class="subtitle">Contingency Planning</p>
+            <p class="body-text">Ensures systems and organizations are prepared to recover from disruptions, disasters, or attacks.</p>
+        </div> 
+
+    </div>
+
+</body>
+</html>
+
+
+
